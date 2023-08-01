@@ -77,9 +77,11 @@
 
             event.preventDefault();
             menuClickSound.play();
-            const link = this.getAttribute('href');
-            window.location.href = link;
 
+            const link = this.getAttribute('href');
+                setTimeout(function() {
+                     window.location.href = link;
+                }, 1000);
             });
         }
     });
